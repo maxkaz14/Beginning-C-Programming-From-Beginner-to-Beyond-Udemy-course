@@ -75,6 +75,13 @@ cout << "Position 1 in vector2d contains: " << vector2d.at(1).at(0) << " " << ve
 cout << "Size of vector2d is: " << vector2d.size();
 cout << endl;
 
+vector2d.at(0).push_back(30);
+
+cout << endl << endl << "Position 0 in vector1 changed to " << vector1.at(0) << endl;
+cout << endl << endl << "Position 0 in vector2d contains: " << vector2d.at(0).at(0) << " " << vector2d.at(0).at(1) << " " << vector2d.at(0).at(2) << endl;
+cout << "Position 1 in vector2d contains: " << vector2d.at(1).at(0) << " " << vector2d.at(1).at(1) << endl;
+cout << "Size of vector2d is: " << vector2d.size();
+cout << endl;
     
     return 0;
 }
