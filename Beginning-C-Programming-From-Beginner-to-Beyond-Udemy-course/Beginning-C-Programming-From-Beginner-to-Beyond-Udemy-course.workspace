@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course" Database="" Version="10000">
-  <Project Name="ArraysPractice" Path="ArraysPractice/ArraysPractice.project" Active="Yes"/>
+  <Project Name="ArraysPractice" Path="ArraysPractice/ArraysPractice.project" Active="No"/>
+  <Project Name="Challenge" Path="Section7/Challenge/Challenge.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="Challenge" ConfigName="Debug"/>
       <Project Name="ArraysPractice" ConfigName="Debug"/>
+      <Project Name="Challenge" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="Challenge" ConfigName="Release"/>
       <Project Name="ArraysPractice" ConfigName="Release"/>
+      <Project Name="Challenge" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
