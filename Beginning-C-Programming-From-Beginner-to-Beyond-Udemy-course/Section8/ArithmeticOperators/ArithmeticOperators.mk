@@ -5,18 +5,19 @@
 ## Debug
 ProjectName            :=ArithmeticOperators
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/frank/Desktop/CPPExamples/Section8
-ProjectPath            :=C:/Users/frank/Desktop/CPPExamples/Section8/ArithmeticOperators
+WorkspaceConfiguration :=Debug
+WorkspacePath          :="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section8"
+ProjectPath            :="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section8/ArithmeticOperators"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=frank
-Date                   :=31/01/2018
-CodeLitePath           :="C:/Program Files/CodeLite"
-LinkerName             :=C:/MinGW/bin/g++.exe
-SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
+User                   :=Maksim Kazarnovskiy
+Date                   :=10/11/2023
+CodeLitePath           :=/Users/maksimkazarnovskiy/.codelite
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -27,6 +28,7 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
+OutputDirectory        :=$(IntermediateDirectory)
 OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
@@ -34,9 +36,7 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="ArithmeticOperators.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=C:/MinGW/bin/windres.exe
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,21 +47,21 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overridden using an environment variable
 ##
-AR       := C:/MinGW/bin/ar.exe rcu
-CXX      := C:/MinGW/bin/g++.exe
-CC       := C:/MinGW/bin/gcc.exe
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS := -std=c++14 -Wall -g -O0 -std=c++14 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := C:/MinGW/bin/as.exe
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=C:\Program Files\CodeLite
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -81,11 +81,11 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -93,11 +93,9 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/frank/Desktop/CPPExamples/Section8/ArithmeticOperators/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section8/ArithmeticOperators/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course.workspace">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="1" Name="m_selectedTab"/>
   <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Challenge/main.cpp" Name="FileName"/>
-      <int Value="33" Name="FirstVisibleLine"/>
-      <int Value="27" Name="CurrentLine"/>
+      <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/ArraysPractice/main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="11" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section7/Challenge/main.cpp" Name="FileName"/>
+      <int Value="60" Name="FirstVisibleLine"/>
+      <int Value="81" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

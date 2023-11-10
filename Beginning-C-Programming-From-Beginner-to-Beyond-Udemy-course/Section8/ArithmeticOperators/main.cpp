@@ -45,7 +45,10 @@ int main() {
     num2 = 3;
     
     result = num1 % num2;
-    cout << num1 << " % " <<  num2 << " = "<< result << endl;    
+    cout << num1 << " % " <<  num2 << " = "<< result << endl;  
+
+    result = num1 / num2;
+    cout << num1 << " / " <<  num2 << " = "<< result << endl;   
     
     result = num1 * 10 + num2;
     
