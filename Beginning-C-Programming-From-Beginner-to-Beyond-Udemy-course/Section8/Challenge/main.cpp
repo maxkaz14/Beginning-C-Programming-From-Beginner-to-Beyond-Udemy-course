@@ -39,6 +39,75 @@ using namespace std;
 
 int main() {
 
+    int dollars {};
+    int quarters {};
+    int dimes {};
+    int nickels {};
+    int pennies {};
+    
+    int cents {};
+    
+    cout << "Please enter number of cents: ";
+    cin >> cents;
+    cout << endl;
+    
+// Solution using modulo
+
+    cout << "************************\n Solution using modulo.\n\n";
+    int remains_modulo {};
+    
+    dollars = cents/100;
+    remains_modulo = cents%100;
+    
+    quarters = remains_modulo/25;
+    remains_modulo = remains_modulo%25;
+    
+    dimes = remains_modulo/10;
+    remains_modulo = remains_modulo%10;
+    
+    nickels = remains_modulo/5;
+    remains_modulo = remains_modulo%5;
+    
+    pennies = remains_modulo;
+    
+    cout << "You can provide this change as follows: " << endl;
+    cout << "Dollars: " << dollars << endl;
+    cout << "Quarters: " << quarters << endl;
+    cout << "Dimes: " << dimes << endl;
+    cout << "Nickels: " << nickels << endl;
+    cout << "Pennies: " << pennies << endl << endl;
+    
+
+
+// Solution without modulo
+
+dollars = quarters = dimes = nickels = pennies = 0;
+//cout << "test " << dollars << quarters << dimes << nickels << pennies << cents;
+
+    cout << endl <<"************************\n Solution without modulo.\n\n";
+    
+    dollars = cents/100;
+    cents -= dollars*100;
+    
+    quarters = cents/25;
+    cents -= quarters*25;
+    
+    dimes = cents/10;
+    cents -= dimes*10;
+    
+    nickels = cents/5;
+    cents -= nickels*5;
+    
+    pennies = cents;
+   
+    cout << "You can provide this change as follows: " << endl;
+    cout << "Dollars: " << dollars << endl;
+    cout << "Quarters: " << quarters << endl;
+    cout << "Dimes: " << dimes << endl;
+    cout << "Nickels: " << nickels << endl;
+    cout << "Pennies: " << pennies << endl << endl;
+
+ 
     cout << endl;
     return 0;
 }
