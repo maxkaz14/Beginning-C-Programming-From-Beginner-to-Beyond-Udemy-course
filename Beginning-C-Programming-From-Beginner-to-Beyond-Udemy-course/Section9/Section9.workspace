@@ -15,7 +15,9 @@
   <Project Name="Histogram" Path="Histogram/Histogram.project" Active="No"/>
   <Project Name="Challenge" Path="Challenge/Challenge.project" Active="No"/>
   <Project Name="ChallengeSolution" Path="ChallengeSolution/ChallengeSolution.project" Active="No"/>
-  <Project Name="GradesMy" Path="GradesMy/GradesMy.project" Active="Yes"/>
+  <Project Name="GradesMy" Path="GradesMy/GradesMy.project" Active="No"/>
+  <Project Name="Conditional_operator_my" Path="Conditional_operator_my/Conditional_operator_my.project" Active="No"/>
+  <Project Name="Billion_count_my" Path="Billion_count_my/Billion_count_my.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -35,6 +37,8 @@
       <Project Name="Challenge" ConfigName="Debug"/>
       <Project Name="ChallengeSolution" ConfigName="Debug"/>
       <Project Name="GradesMy" ConfigName="Debug"/>
+      <Project Name="Conditional_operator_my" ConfigName="Debug"/>
+      <Project Name="Billion_count_my" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -54,6 +58,8 @@
       <Project Name="Challenge" ConfigName="Release"/>
       <Project Name="ChallengeSolution" ConfigName="Release"/>
       <Project Name="GradesMy" ConfigName="Release"/>
+      <Project Name="Conditional_operator_my" ConfigName="Release"/>
+      <Project Name="Billion_count_my" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
