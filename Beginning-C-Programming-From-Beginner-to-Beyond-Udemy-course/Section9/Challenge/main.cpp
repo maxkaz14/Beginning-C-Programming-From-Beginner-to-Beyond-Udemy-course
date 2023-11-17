@@ -63,12 +63,90 @@ Good luck!
 
 */
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
     
-    cout << "Hello world" << endl;
+    vector <int> list {};
+    cout << "\nWelcome to the data list manipulation software without functions!" << endl;
+    char user_choice {};
+    do {
+        
+        // Menu block
+        
+        cout << "Choose what to do with the list:" << endl << endl;
+        cout << "P - print numbers" << endl;
+        cout << "A - add a number" << endl;
+        cout << "M - calculate and print the mean of all the numbers" << endl;
+        cout << "L - display the largest of numbers in a list" << endl;
+        cout << "S - display the smallest of numbers in a list" << endl;
+        cout << "Q - quit" << endl << endl;
+        cout << "Choose your destiny: ";
+        cin >> user_choice;
+        cout << endl;
+        // Here I would have made switch-case operator with function calls but we are not into functions yet
+        //So here is my "if" tree
+        
+        if (user_choice == 'P' || user_choice == 'p') {
+            if (list.size() == 0) {
+                cout << "[] - the list is empty" << endl;
+            } else {
+                cout << "[ ";
+                for (auto point : list) {
+                    cout << point << " ";
+                }
+                cout << "]" << endl;
+            }
+        } else if (user_choice == 'A' || user_choice == 'a') {
+            int user_number {};
+            cout << endl << "Type the number do you want to add to a list: ";
+            cin >> user_number;
+            list.push_back(user_number);
+            cout << user_number << " added to the end of the list" << endl << endl;
+        } else if (user_choice == 'M' || user_choice == 'm') {
+            if (list.size() == 0) {
+                cout << "Unable to calculate mean, the list is empty" << endl;
+            } else {
+                double sum {};
+                double size = list.size();
+                for (auto point : list) {
+                    sum += point;
+                }
+                double mean = sum/size;
+                
+                cout << "The mean of the list is: " << mean << endl;
+            }
+            
+        } else if (user_choice == 'L' || user_choice == 'l'){
+            if (list.size() == 0) {
+                cout << "Unable to display largest number - the list is empty" << endl;
+            } else {
+                int larger_number {list.at(0)};
+                for (auto point : list) {
+                    if (point > larger_number)
+                        larger_number = point;
+                }
+                cout<< larger_number << " is the largest number in a list" << endl;
+            }
+        } else if (user_choice == 'S' || user_choice == 's'){
+            if (list.size() == 0) {
+                cout << "Unable to display smallest number - the list is empty" << endl;
+            } else {
+                int smaller_number {list.at(0)};
+                for (auto point : list) {
+                    if (point < smaller_number)
+                        smaller_number = point;
+                }
+                cout<< smaller_number << " is the smallest number in a list" << endl;
+            }
+        }
+        } while (user_choice != 'Q' && user_choice != 'q');
+    
+    cout << "Thanks for using data list manipulation software" << endl;
+    cout << "Logging you out..." << endl;
+    cout << "You may get on with your life!"<< endl;
     return 0;
 }
 

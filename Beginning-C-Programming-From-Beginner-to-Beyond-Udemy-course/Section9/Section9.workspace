@@ -13,11 +13,11 @@
   <Project Name="DoWhile" Path="DoWhile/DoWhile.project" Active="No"/>
   <Project Name="MultiplcationTable" Path="MultiplcationTable/MultiplcationTable.project" Active="No"/>
   <Project Name="Histogram" Path="Histogram/Histogram.project" Active="No"/>
-  <Project Name="Challenge" Path="Challenge/Challenge.project" Active="No"/>
+  <Project Name="Challenge" Path="Challenge/Challenge.project" Active="Yes"/>
   <Project Name="ChallengeSolution" Path="ChallengeSolution/ChallengeSolution.project" Active="No"/>
   <Project Name="GradesMy" Path="GradesMy/GradesMy.project" Active="No"/>
   <Project Name="Conditional_operator_my" Path="Conditional_operator_my/Conditional_operator_my.project" Active="No"/>
-  <Project Name="Billion_count_my" Path="Billion_count_my/Billion_count_my.project" Active="Yes"/>
+  <Project Name="Billion_count_my" Path="Billion_count_my/Billion_count_my.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
