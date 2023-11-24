@@ -2,25 +2,34 @@
 <CodeLite_Workspace Name="Section10" Database="" Version="10.0.0">
   <Project Name="CStyleStrings" Path="CStyleStrings/CStyleStrings.project" Active="No"/>
   <Project Name="CPPStrings" Path="CPPStrings/CPPStrings.project" Active="No"/>
-  <Project Name="CharFunctions" Path="CharFunctions/CharFunctions.project" Active="Yes"/>
+  <Project Name="CharFunctions" Path="CharFunctions/CharFunctions.project" Active="No"/>
   <Project Name="Challenge" Path="Challenge/Challenge.project" Active="No"/>
   <Project Name="ChallengeSolution" Path="ChallengeSolution/ChallengeSolution.project" Active="No"/>
+  <Project Name="C_string_training_my" Path="C_string_training_my/C_string_training_my.project" Active="No"/>
+  <Project Name="SwitchTestMine" Path="SwitchTestMine/SwitchTestMine.project" Active="No"/>
+  <Project Name="SuperChallengeMy" Path="SuperChallengeMy/SuperChallengeMy.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
+    <WorkspaceConfiguration Name="Debug">
       <Environment/>
       <Project Name="CStyleStrings" ConfigName="Debug"/>
       <Project Name="CPPStrings" ConfigName="Debug"/>
       <Project Name="CharFunctions" ConfigName="Debug"/>
       <Project Name="Challenge" ConfigName="Debug"/>
       <Project Name="ChallengeSolution" ConfigName="Debug"/>
+      <Project Name="C_string_training_my" ConfigName="Debug"/>
+      <Project Name="SwitchTestMine" ConfigName="Debug"/>
+      <Project Name="SuperChallengeMy" ConfigName="Debug"/>
     </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
+    <WorkspaceConfiguration Name="Release">
       <Environment/>
       <Project Name="CStyleStrings" ConfigName="Release"/>
       <Project Name="CPPStrings" ConfigName="Release"/>
       <Project Name="CharFunctions" ConfigName="Release"/>
       <Project Name="Challenge" ConfigName="Release"/>
       <Project Name="ChallengeSolution" ConfigName="Release"/>
+      <Project Name="C_string_training_my" ConfigName="Release"/>
+      <Project Name="SwitchTestMine" ConfigName="Release"/>
+      <Project Name="SuperChallengeMy" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

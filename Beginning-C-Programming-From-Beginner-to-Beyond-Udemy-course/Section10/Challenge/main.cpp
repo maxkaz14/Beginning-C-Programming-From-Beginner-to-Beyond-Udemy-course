@@ -30,12 +30,42 @@ Reuse existing functionality in libraries and in the std::string class!
 */
 
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 int main() {
     
-    string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-    string key  {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwebgjhqdyvtkfuompciasr"};
+    string alphabet {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "};
+    string key  {"XZNLWEBGJHQDYVTKFUOMPCIASRxznlwe bgjhqdyvtkfuompciasr"};
     
+    string message_1 {};
+    cout << "Enter any message to be encrypted: ";
+    getline(cin, message_1);
+    
+    string encrypted_message {};
+    for (size_t i {}; i < message_1.length(); i++) {
+        for (size_t j {}; j < alphabet.length(); j++) {
+            if (message_1.at(i) == alphabet.at(j)) {
+                encrypted_message += key.at(j);
+                break;
+            }
+        }
+    }
+    
+    cout << "Your encrypted message would be: " << encrypted_message << endl;
+    
+    string decrypted_message {};
+    for (size_t i {}; i < encrypted_message.length(); i++) {
+        for (size_t j {}; j < key.length(); j++) {
+            if (encrypted_message.at(i) == key.at(j)) {
+                decrypted_message += alphabet.at(j);
+                break;
+            }
+        }
+    }
+    
+    cout << "After decryption reciever would get: " << decrypted_message << endl;
     
     cout << endl;
     return 0;
