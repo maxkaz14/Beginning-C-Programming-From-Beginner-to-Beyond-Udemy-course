@@ -5,8 +5,8 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section10/Challenge/main.cpp" Name="FileName"/>
-      <int Value="42" Name="FirstVisibleLine"/>
-      <int Value="61" Name="CurrentLine"/>
+      <int Value="17" Name="FirstVisibleLine"/>
+      <int Value="31" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -20,13 +20,13 @@
     <TabInfo>
       <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section10/SwitchTestMine/main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="21" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/maksimkazarnovskiy/Library/CloudStorage/OneDrive-Personal/Learning/Software engineering/01 Programming language/Cpp/MyUdemyCode/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Beginning-C-Programming-From-Beginner-to-Beyond-Udemy-course/Section10/SuperChallengeMy/main.cpp" Name="FileName"/>
-      <int Value="27" Name="FirstVisibleLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
       <int Value="43" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
